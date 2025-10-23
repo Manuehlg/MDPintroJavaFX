@@ -1,6 +1,8 @@
 package com.pp.demo;
 
 import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -18,10 +20,16 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
 
         Button b = new Button("Prueba");
-        Button b2 = new Button("Prueba");
+
         // añade el componente al contenedor
         root.getChildren().add(b);
-        root.getChildren().add(b2);
+
+        b.setText("Click me");
+        b.setOnAction( new EventHandler<ActionEvent>() {
+            public void handle(ActionEvent event){
+                stage.setTitle("Nuevo Titulo");
+            }
+        });
 
         stage.show();
     }
