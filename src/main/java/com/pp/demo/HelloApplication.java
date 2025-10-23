@@ -18,8 +18,10 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
 
         Button b = new Button("Prueba");
+        Button b2 = new Button("Prueba");
         // añade el componente al contenedor
         root.getChildren().add(b);
+        root.getChildren().add(b2);
 
         stage.show();
     }
