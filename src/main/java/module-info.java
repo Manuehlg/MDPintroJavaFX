@@ -11,6 +11,7 @@ module com.pp.demo {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
 
-    opens com.pp.demo to javafx.fxml;
-    exports com.pp.demo;
+    opens com.pp.demo.sesion5 to javafx.graphics, javafx.fxml;
+
+    exports com.pp.demo.sesion5;
 }
