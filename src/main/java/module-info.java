@@ -13,5 +13,9 @@ module com.pp.demo {
 
     opens com.pp.demo.sesion5 to javafx.graphics, javafx.fxml;
 
+    opens com.pp.demo.sesion6 to javafx.graphics, javafx.fxml;
+
     exports com.pp.demo.sesion5;
+
+    exports com.pp.demo.sesion6;
 }

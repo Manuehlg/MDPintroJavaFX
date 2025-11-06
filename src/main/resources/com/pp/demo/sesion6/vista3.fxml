@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pp.demo.sesion6.Controller3">
+   <top>
+      <HBox alignment="CENTER" prefHeight="48.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Buscador de Sorteo" />
+         </children>
+      </HBox>
+   </top>
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="39.0" prefWidth="35.0" text="Sorteo" />
+            <ListView fx:id="listSorteos" prefHeight="309.0" prefWidth="100.0" />
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="32.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Listo" />
+         </children>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView fx:id="tableBoletos" editable="true" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn prefWidth="75.0" text="FECHA" />
+            <TableColumn prefWidth="116.33335876464844" text="NÚMEROS" />
+            <TableColumn prefWidth="107.6666259765625" text="PRECIO" />
+            <TableColumn prefWidth="125.00003051757812" text="JUGADO" />
+        </columns>
+      </TableView>
+   </center>
+</BorderPane>
